@@ -1,0 +1,15 @@
+﻿@model IEnumerable<SpongeBob.Models.SpongeBobFriends>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="col">
+        <div class="card border-dark mb-3">
+          <div class="card-header">Персонажи</div>
+          <div class="card-body text-dark">
+            @Html.Partial("PartialFriends", Model)
+          </div>
+        </div>
+      </div>
+</div>
